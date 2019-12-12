@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from ayomm.000webhostapp.com/assignment/Car/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2019 15:34:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <style>
+        #sky{
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+        #back{
+            width: 200%;
+            height: 100%;
+            position: absolute;
+            animation: move 10s infinite ;
+        }
+
+@keyframes move {
+    from{
+        transform: translateX(0px);;
+    }to{
+             transform: translateX(-3000px);
+             
+         }
+
+}
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(3600deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<img src="img/sky.jpg" alt="sky" id="sky">
+<div id="back">
+    <img src="img/road.jpg" alt="" style="width: 200%;height: 30%;bottom: 0%;position: absolute">
+    <img src="img/city.png" alt="" style="bottom: 30% ; width: 200% ; height:80%;position: absolute">
+</div>
+<img src="img/car.png" alt="" style="height: 150px; width: 300px;bottom: 20%;position: fixed; margin-left: 500px ;z-index: 10">
+<img src="img/wheel.png" alt="" style="width: 70px;height: 70px; bottom: 21%;margin-left: 520px ; position: fixed ; z-index: 20; animation: rotate 10s infinite ;" >
+<img src="img/wheel.png" alt="" style="width: 70px;height: 70px; bottom: 21%;margin-left: 704px ; position: fixed ; z-index: 20;animation: rotate 10s infinite" >
+<img src="img/index.html" alt="">
+</body>
+<!-- Mirrored from ayomm.000webhostapp.com/assignment/Car/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2019 15:34:18 GMT -->
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M E W A N</title>
+    <link rel="icon" href="img/icon.png" type="img/png">
+    <link rel="stylesheet" href="css/Assignment.css">
+    <script src="js/anime.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/TweenMan.js"></script>
+    <link rel="stylesheet" href="img/font-awsome/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="mediaquary/AssingmentMedia.css">
+</head>
+<body>
+<div class="song" style="z-index: 20;position: absolute;">
+
+    <div class="pause" onclick="togglePlay()"><i class="fas fa-volume-up" style='color: white'></i></div>
+    <div class="player">
+        <audio class="audio" src="sound/BackgroundSound.mp3" autoplay type="audio" loop=""></audio>
+    </div>
+</div>
+
+<div class="mid">
+    <div id="circle" style="opacity: 1">
+        <div class="ringOne" style="transition: 2s; opacity:1">
+            <img src="img/ring.png" alt="">
+        </div>
+        <div class="ringTwo">
+            <img src="img/ring.png" alt="">
+        </div>
+
+        <div id="cirleheaderdiv">
+            <h1 align="center" id="csshead"style="color: #bdbdbd;opacity: 0;transition: 0.5s;margin-top:33px;margin-bottom: -22px;">
+                <i class="fab fa-css3-alt" id="css" style="font-size: 175px;margin-top: 10px;"></i>
+            </h1>
+
+            <h1 align="center" id="jshead"style="color: #bdbdbd; opacity: 0; transition: 0.5s;    margin-top: -24px;">
+                <i class="fab fa-js-square" style="font-size: 175px; margin-top: -136px;"></i>
+            </h1>
+        </div>
+    </div>
+
+
+    <!--<div id="circle1" style="opacity: 1">-->
+    <!--<div class="ringOne" style="transition: 2s; opacity:1">-->
+    <!--<img src="img/ring.png"  alt="">-->
+    <!--</div>-->
+    <!--<div class="ringTwo">-->
+    <!--<img src="img/ring.png" alt="">-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div id="list">
+        <ul id="ulset" style="opacity: 0">
+            <li id="hm">HOME</li>
+            <li id="abt">ABOUT</li>
+            <li id="skl">SKILLS</li>
+            <li   style="color: #fff82a">ASASSINGMENTS</li>
+            <li id="prj">PROJECTS</li>
+            <li id="cnt">CONTACT</li>
+        </ul>
+    </div>
+</div>
+
+<div class="letterdiv" id="skillsdiv" style="transition: 1s;overflow-y: scroll;overflow-x: hidden;">
+    <h1 align="center" id="headline" class="headline" style="transition: 1s; opacity: 0;">ASSIGNMENTS</h1>
+    <h4 align="center" id="discrip" class="discription" style="transition: 1s; opacity: 0;">CSS</h4>
+    <!--<p align="center" id="para" class="para" style="transition: 1s; opacity: 1; font-size: 12px">-->
+    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+    <!--Ab cupiditate, dignissimos enim excepturi harum impedit inventore ipsa-->
+    <!--, non sed tempora velit voluptas. Cum distinctio impedit-->
+    <!--laboriosam maiores necessitatibus similique, totam!</p>-->
+
+    <div id="assingdiv" style="transition: 0.7s">
+        <div class="cards" id="slider">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">SLIDER</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards" id="knightrider">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">KNIGHTRIDER</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards" id="caranimate">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">CAR ANIMATION</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards">
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-question-circle"></i></h1>
+        </div>
+        <div class="cards">
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-question-circle"></i></h1>
+        </div>
+    </div>
+
+    <h4 align="center" id="discrip1" class="discription" style="transition: 1s; opacity: 1;margin-top: 71px;;">JAVA
+        SCRIPT</h4>
+
+    <div id="assingdiv1">
+        <div class="cards">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">MOUSE MOVE</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">KNIGHTRIDER</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">COLOR QUEUE</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards">
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-question-circle"></i></h1>
+        </div>
+        <div class="cards">
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-question-circle"></i></h1>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    var pause = document.querySelector(".pause");
+    var audio = document.querySelector(".audio");
+
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            pause.innerHTML = "<i class=\"fas fa-volume-up\" style='color: white'></i>";
+        } else {
+            audio.pause();
+            pause.innerHTML = "<i class=\"fas fa-volume-mute\"></i>";
+            pause.style.color = " #848484";
+        }
+    }
+
+
+
+    TweenMax.to("#ulset", 1, {
+        delay: 1.2,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to("#circle", 1, {
+        delay: 0.5,
+        opacity: 1,
+        scaleX: 10 / 30,
+        scaleY: 10 / 30,
+        y: -200,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".headline", 1, {
+        delay: 0.9,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to(".discription", 1, {
+        delay: 1.1,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to(".cards", 1, {
+        delay: 1.5,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+    $('#assingdiv').mouseenter(function () {
+        $('#jshead').css('opacity', '0');
+        $('#csshead').css('opacity', '1');
+    });
+    $('#assingdiv1').mouseenter(function () {
+        $('#csshead').css('opacity', '0');
+        $('#jshead').css('opacity', '1');
+    });
+
+    $('#slider').click(function () {
+        location.href = "assingment/asingmentCSS/slider/index.html";
+
+    });
+    $('#knightrider').click(function () {
+        location.href = "assingment/asingmentCSS/Kniterider/index.html";
+
+    });
+    $('#caranimate').click(function () {
+        location.href = "assingment/asingmentCSS/Car/index-2.html";
+
+    });
+
+    $('#hm').click(function () {
+        location.href = "index.html";
+
+    });
+
+    $('#skl').click(function() {
+        var time = 3
+        setInterval( function() {
+            time--;
+
+            $('.headline').css('opacity','0');
+            $('.discription').css('opacity','0');
+            $('.card').css('opacity','0');
+            $('#ulset').css('opacity','0');
+            $('#assingdiv').css('opacity','0');
+            $('#assingdiv1').css('opacity','0');
+            $('#csshead').css('opacity','0');
+            $('#jshead').css('opacity','0');
+            TweenMax.to("#circle", 1, {
+                delay: 0.5,
+                opacity: 1,
+                scaleX: 1 ,
+                scaleY: 1,
+                y: 20,
+                ease: Expo.easeInOut
+            });
+
+            $('#time').html(time);
+            if (time === 0) {
+                location.href = "Skills.html";
+            }
+        }, 1000 );
+
+    });
+
+    $('#abt').click(function() {
+        var time = 3
+        setInterval( function() {
+            time--;
+
+            $('.headline').css('opacity','0');
+            $('.discription').css('opacity','0');
+            $('.card').css('opacity','0');
+            $('#ulset').css('opacity','0');
+            $('#assingdiv').css('opacity','0');
+            $('#circle').css('opacity','0');
+            $('#assingdiv1').css('opacity','0');
+            $('#csshead').css('opacity','0');
+            $('#jshead').css('opacity','0');
+            TweenMax.to("#circle", 1, {
+                delay: 0.5,
+                opacity: 1,
+                scaleX: 1 ,
+                scaleY: 1,
+                y: 20,
+                ease: Expo.easeInOut
+            });
+
+            $('#time').html(time);
+            if (time === 0) {
+                location.href = "About.html";
+            }
+        }, 1000 );
+
+    });
+
+    $('#prj').click(function() {
+        var time = 3
+        setInterval( function() {
+            time--;
+
+            $('.headline').css('opacity','0');
+            $('.discription').css('opacity','0');
+            $('.card').css('opacity','0');
+            $('#ulset').css('opacity','0');
+            $('#assingdiv').css('opacity','0');
+            $('#assingdiv1').css('opacity','0');
+            $('#csshead').css('opacity','0');
+            $('#jshead').css('opacity','0');
+
+            TweenMax.to("#circle", 1, {
+                delay: 0.5,
+                opacity: 1,
+                scaleX: 1 ,
+                scaleY: 1,
+                y: 20,
+                ease: Expo.easeInOut
+            });
+
+            $('#time').html(time);
+            if (time === 0) {
+                location.href = "Projects.html";
+            }
+        }, 1000 );
+
+    });
+
+    $('#cnt').click(function () {
+        location.href = "Contact.html";
+
+    });
+
+</script>
+</body>
+</html>

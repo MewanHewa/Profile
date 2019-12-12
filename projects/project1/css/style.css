@@ -1,0 +1,290 @@
+body{
+    overflow-x: hidden;
+    background-color: #cacaca;
+}
+#hed {
+    display: inline;
+    margin-right: 7%;
+    margin-top: 20px;
+    right: 0;
+    width: 19px;
+    font-size: 18px;
+    background-color: white;
+    position: fixed;
+    padding: 9px;
+    border-radius: 381px;
+    box-shadow: 1px 4px 13px -3px black;
+}
+#navbar{
+    height: 100%;
+    width: 280px;
+    background-color: rgba(0, 0, 0, 0.77);
+    z-index: 10;
+    position: fixed;
+}
+#shopname {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: #FFDFB8;
+    margin-left: 74px;
+}
+#navImage{
+ width: 280px;
+    height: 100%;
+    position: fixed;
+}
+#line1 {
+    margin-top: 2px;
+    border: 0.5px solid #a76309;
+}
+#propic{
+    width: 40px;
+    height: 40px;
+    border-radius: 360px;
+    border: 1px solid #a76309;
+}
+#name {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff0e9;
+    font-size: 20px;
+    /* display: inline; */
+    top: 35px;
+    letter-spacing: 4px;
+    margin-top: -37px;
+    margin-left: 70px;
+}
+#line2 {
+    margin-top: 3px;
+    border: 0.5px solid #a76309;
+}
+
+#buttondiv{
+    list-style: none;
+    transition: 0.5s;
+    padding: 20px;
+    position: relative;
+    color: #FFDFB8;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+#buttondiv>a {
+    padding: 12px;
+    display: block;
+    color: #FFDFB8;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    margin-bottom: 28px;
+}
+
+#buttondiv>a:hover{
+    background-color: rgba(253, 251, 255, 0.26);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#cardsection {
+    background-color: #eeeeee;
+    width: 79.5%;
+    height: 100%;
+    position: absolute;
+    margin-left: 280px;
+    display: flex;
+}
+
+.card {
+    width: 320px;
+    ;
+    height: 200px;
+    background-color: #fdfffb;
+    margin-left: 32px;
+    margin-top: 95px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 11px -4px black;
+}
+.cardhead {
+    width: 300px;
+    margin-left: 9px;
+    margin-top: -24px;
+    height: 184px;
+    border-radius: 5px;
+    background:linear-gradient( #f9d0a2, #e4bb8f, #bb875e);
+    box-shadow: 0px 4px 7px -4px black;
+    transition: 0.3s;
+}
+#chart1 {
+    width: 297px;
+    height: 183px;
+    margin-top: 2px;
+    margin-left: 1px;
+}
+#chart2 {
+    width: 276px;
+    height: 125px;
+    margin-top: 28px;
+    margin-left: 6px;
+}
+#chart3 {
+    width: 229px;
+    height: 203px;
+    margin-top: -22px;
+    margin-left: 39px;
+}
+.card>ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 71px;
+}
+.card>p{
+    visibility: hidden;
+}
+
+.card:hover>.cardhead{
+    margin-top: -54px;
+    transition: 0.1s;
+
+}
+.card:hover>p {
+    font-family: 'Quicksand', sans-serif;
+    display: inline;
+    visibility: unset;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    margin-left: 59px;
+}
+
+#coffeediv {
+    margin-top: 395px;
+    margin-left: -907px;
+    display: flex;
+}
+
+#coffeediv>img:nth-child(1){
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin-right: 110px;
+
+}
+#coffeediv>img:nth-child(2){
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin-right: 110px;
+
+}
+#coffeediv>img:nth-child(3){
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin-right: 110px;
+
+}
+#coffeediv>img:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin-right: 95px;
+    margin-left: 38px;
+}
+#coffeediscrip {
+    display: flex;
+    margin-top: 515px;
+    margin-left: 53px;
+    position: absolute;
+}
+
+#coffeediscrip>ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    padding-left: 43px;
+    margin-top: -7px;
+    margin-left: 29px;
+    padding-right: 8px
+}
+#coffeediscrip>p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    margin-top: 67px;
+    margin-left: -78px;
+    padding-right: 72px;
+}
+#coffeepara {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    margin-top: 532px;
+    margin-left: 84px;
+    padding-right: 19px;
+    position: absolute;
+    display: flex;
+}
+#coffeediscrip>ul:nth-child(1) {
+    margin-left: 26px;
+}#coffeediscrip>ul:nth-child(4) {
+    margin-left: 53px;
+}
+.customcardsection {
+    width: 100%;
+    height: 244px;
+    margin-top: 644px;
+    background-color: rgb(239, 236, 245);
+    position: absolute;
+    display: flex;
+}
+.customcard {
+    width: 228px;
+    height: 127px;
+    box-shadow: 0px 1px 16px -6px black;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 63px;
+    margin-left: 34px;
+}
+.customcardhead {
+    width: 95px;
+    height: 93px;
+    border-radius: 4px;
+    background: linear-gradient(#8a5c48, #d0b08f, #e4bb8f);
+    margin-top: -24px;
+    margin-left: 11px;
+    box-shadow: 0px 2px 10px -3px black;
+}
+.customcard>ul {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 86px;
+    margin-top: -63px;
+    font-size: 19px;
+}
+.customcard>il {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 140px;
+    margin-top: -1px;
+    font-size: 41px;
+}
+
+#customericon{
+    font-size: 42px;
+    color: white;
+    margin-top: 23px;
+    margin-left: 21px;
+
+}
+#coffeeicon{
+    font-size: 42px;
+    color: white;
+    margin-top: 23px;
+    margin-left: 21px;
+}
+#feedback{
+    font-size: 42px;
+    color: white;
+    margin-top: 23px;
+    margin-left: 21px;
+}
+#followers {
+    font-size: 42px;
+    color: white;
+    margin-top: 23px;
+    margin-left: 28px;
+}

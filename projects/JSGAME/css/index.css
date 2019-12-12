@@ -1,0 +1,423 @@
+
+#maindiv{
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#optiondiv{
+    position: absolute;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*background-color: rgba(255, 244, 77, 0.72);*/
+    border-radius: 10%;
+    z-index: 50;
+
+}
+
+
+#gameoverdiv{
+    position: absolute;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*background-color: rgba(255, 244, 77, 0.72);*/
+    border-radius: 10%;
+    z-index: 49;
+    opacity: 0;
+
+}
+#gameover {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    font-family: 'Aladin', cursive;
+    font-size: 50px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    border-radius: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border:  solid 1px #ffffff;
+}
+
+#guid{
+    position: absolute;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../img/bg3/papers.co-ar19-red-river-illustration-art-anime-36-3840x2400-4k-wallpaper.jpg");
+    z-index: 100;
+}
+
+#btnstart {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    font-family: 'Aladin', cursive;
+    font-size: 96px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    border-radius: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border:  solid 1px #ffffff;
+}
+
+#btnplay{
+    height: 200px;
+    width: 200px;
+    background-color: #72ff80;
+    border-radius: 20%;
+    border: solid 5px #efa100;
+    position: absolute;
+    font-family: 'Aladin', cursive;
+    font-size: 96px;
+    margin-top: 215px;
+
+
+}
+#witch{
+    width: 140px;
+    height: 130px;
+    position: fixed;
+    margin-left: 100px;
+    bottom :200px;
+    z-index: 20;
+    background-image: url(../img/witch.gif);
+
+}
+#sky{
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../img/bg/sky.png");
+}
+
+#cloud1 {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../img/bg/clouds_1.png");
+
+
+}
+#cloud2 {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../img/bg3/BG_Decor.png");
+    opacity: 0.2;
+
+
+}
+#rocks{
+    position: absolute;
+    margin: auto;
+    width: 1000%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../img/bg3/Middle_DecorNight.png");
+    transition: 900s;
+
+}
+
+#ground {
+    position: absolute;
+    margin: auto;
+    width: 2000%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../img/bg3/Foreground1.png");
+    transition: 900s ;
+
+
+}
+#grass {
+    position: absolute;
+    margin: auto;
+    width: 2000%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../img/bg3/Ground.png");
+    transition: 900s ;
+    z-index: 20;
+
+
+}
+
+.demon{
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    height: 130px;
+    background-size: cover;
+    background-image: url("../img/bg3/Demon.gif");
+    z-index: 30;
+}
+
+#d1{
+    left:1500px;
+    top :200px;
+
+}
+
+#d2{
+
+    left:2100px;
+    top :300px;
+}
+
+#d3{
+
+    left:2800px;
+    top :250px;
+}
+
+#d4{
+
+    left: 3200px;
+    top :400px;
+}
+
+#d5{
+    left: 3800px;
+    top :210px;
+}
+
+#d6{
+    left: 4300px;
+    top :310px;
+}
+
+#d7{
+    left: 4900px;
+    top :260px;
+}
+
+#d8{
+    left: 5300px;
+    top :400px;
+}
+#d9{
+    left: 5800px;
+    top :200px;
+}
+
+#d10{
+    left:6100px;
+    top :320px;
+}
+#d11{
+    left:6600px;
+    top :500px;
+}
+#d12{
+    left: 7000px;
+    top :430px;
+}
+#d13{
+    left: 7300px;
+    top :480px;
+}
+#d14{
+    left: 7800px;
+    top :210px;
+}
+#d15{
+    left: 8300px;
+    top :310px;
+}
+
+#d16{
+    left: 8750px;
+    top :230px;
+}
+
+
+#d17{
+    left: 9300px;
+    top :450px;
+}
+
+#d18{
+    left: 9700px;
+    top :290px;
+}
+
+
+/*.firedragon{*/
+    /*position: absolute;*/
+    /*margin: auto;*/
+    /*width: 500px;*/
+    /*height: 120px;*/
+    /*background-size: cover;*/
+    /*background-image: url("../img/bg3/dragon.gif");*/
+    /*z-index: 30;*/
+
+/*}*/
+
+/*#fd1{*/
+    /*left: 800px;*/
+    /*top: 200px;*/
+/*}*/
+
+
+/*.darkdragon{*/
+    /*position: absolute;*/
+    /*margin: auto;*/
+    /*width: 150px;*/
+    /*height: 130px;*/
+    /*background-size: cover;*/
+    /*background-image: url("../img/bg3/crt1.gif");*/
+    /*z-index: 30;*/
+/*}*/
+
+.coins{
+position: absolute;
+margin: auto;
+width: 100px;
+height: 100px;
+background-size: cover;
+background-image: url("../img/bg3/coin.gif");
+z-index: 30;
+    margin-left: 20px;
+
+}
+
+#c1{
+    left: 800px;
+    top: 300px;
+}
+#c2{
+    left: 840px;
+    top: 300px;
+}
+#c3{
+    left: 880px;
+    top: 300px;
+}
+#c4{
+    left: 920px;
+    top: 300px;
+}
+#c5{
+    left: 960px;
+    top: 300px;
+}
+
+
+
+#c6{
+    left: 1400px;
+    top: 400px;
+}
+#c7{
+    left: 1440px;
+    top: 400px;
+}
+#c8{
+    left: 1480px;
+    top: 400px;
+}
+#c9{
+    left: 1520px;
+    top: 400px;
+}
+#coin10{
+    left: 1560px;
+    top: 400px;
+}
+
+
+#coin11{
+    left: 2200px;
+    top: 340px;
+}
+
+#coin12{
+    left: 2240px;
+    top: 340px;
+}
+
+#coin13{
+    left: 2280px;
+    top: 340px;
+}
+
+#coin14{
+    left: 2320px;
+    top: 340px;
+}
+
+#coin15{
+    left: 2360px;
+    top: 340px;
+}
+
+#coin16{
+    left: 3300px;
+    top: 340px;
+}
+
+#coin17{
+    left: 3340px;
+    top: 340px;
+}
+
+#coin18{
+    left: 3380px;
+    top: 340px;
+}
+
+#coin19{
+    left: 3420px;
+    top: 340px;
+}
+
+#coin20{
+    left: 3460px;
+    top: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

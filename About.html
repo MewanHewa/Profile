@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M E W A N</title>
+    <link rel="icon" href="img/icon.png" type="img/png">
+    <link rel="stylesheet" href="css/About.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/TweenMan.js"></script>
+    <link rel="stylesheet" href="img/font-awsome/css/all.css">
+    <link rel="stylesheet" href="mediaquary/AbouteMedia.css">
+
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+</head>
+<body style="color: black">
+<div class="song" style="z-index: 20;position: absolute;">
+
+    <div class="pause" onclick="togglePlay()"><i class="fas fa-volume-up" style='color: white'></i></div>
+    <div class="player">
+        <audio class="audio" src="sound/BackgroundSound.mp3" autoplay type="audio" loop=""></audio>
+    </div>
+</div>
+
+<div class="mid">
+    <div id="circle" style="opacity: 0">
+        <div class="ringOne ring">
+            <img src="img/ring.png" alt="">
+        </div>
+        <div class="ringTwo ring">
+            <img src="img/ring.png" alt="">
+        </div>
+    </div>
+
+
+    <div id="letterdiv">
+        <h1 align="center" id="hi" style="transition: 1s; opacity: 0;">HI!</h1>
+        <h4 align="center" id="name" style="transition: 1s; opacity: 0;">I'm MEWAN AYOMAL</h4>
+        <p align="center" id="para" style="transition: 1s; opacity: 0;">
+            I'am an web developer. I am a programmer with good knowledge of front-end techniques.
+            I love structure and order and I also stand for quality.
+            I love spending time on fixing little details and optimizing web apps.
+            Also I like working in a team, you'll learn faster and much more.
+            As the saying goes: 'two heads are better than one'</p>
+        <h4 align="center" id="mo" style="cursor: pointer;opacity: 0;transition: 1s">
+            <i class="far fa-caret-square-down" style="color: rgba(255,255,255,0.68)"></i>
+        </h4>
+
+    </div>
+
+
+    <div id="list" style="overflow: hidden">
+        <ul id="ulset" style="opacity: 0">
+            <li id="home">HOME</li>
+            <li id="aboute" style="color: #fff82a">ABOUT</li>
+            <li id="skill">SKILLS</li>
+            <li id="assingment">ASASSINGMENTS</li>
+            <li id="proj">PROJECTS</li>
+            <li id="cnt">CONTACT</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const backSound = new Audio("sound/BackSound.mp3");
+    var pause = document.querySelector(".pause");
+    var audio = document.querySelector(".audio");
+
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            pause.innerHTML = "<i class=\"fas fa-volume-up\" style='color: white'></i>";
+        } else {
+            audio.pause();
+            pause.innerHTML = "<i class=\"fas fa-volume-mute\"></i>";
+            pause.style.color = " #848484";
+        }
+    }
+
+    $('#skill').click(function () {
+        location.href = "Skills.html";
+
+    });
+
+    $('#home').click(function () {
+        location.href = "index.html";
+
+    });
+
+    $('#assingment').click(function () {
+        location.href = "Assignment.html";
+
+    });
+
+    $('#proj').click(function () {
+        location.href = "Projects.html";
+
+    });
+    $('#cnt').click(function () {
+        location.href = "Contact.html";
+
+    });
+
+    TweenMax.to("#hi", 0.7, {
+        delay: 0.2,
+        opacity: 1,
+        y: 10,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to("#name", 0.7, {
+        delay: 1,
+        opacity: 1,
+        y: 10,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to("#para", 0.7, {
+        delay: 2,
+        y: 20,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to("#mo", 0.7, {
+        delay: 2.7,
+        opacity: 1,
+        y: 30,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to("#ulset", 0.7, {
+        delay: 1.2,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to("#circle", 0.8, {
+        delay: 0.6,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+
+    // anime.timeline({loop: false})
+    //     .add({
+    //         targets: '.ml7 .letter',
+    //         translateY: ["1.1em", 0],
+    //         translateX: ["0.55em", 0],
+    //         translateZ: 0,
+    //         rotateZ: [180, 0],
+    //         duration: 750,
+    //         easing: "easeOutExpo",
+    //         delay: function(el, i) {
+    //             return 9000 + 50 * i;
+    //         }
+    //     });
+</script>
+
+</body>
+</html>

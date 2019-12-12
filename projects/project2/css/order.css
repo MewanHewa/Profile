@@ -1,0 +1,26 @@
+.txt {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+    border-radius: 23px;
+    height: 33px;
+    width: 90%;
+    margin-left: 14px;
+    box-shadow: 0px 1px 7px -2px black;
+    margin-top: 31px;
+    border: none;
+    font-family: 'Dosis', sans-serif;
+    text-align-last: center;
+    user-select: none;
+    outline: none;
+}
+.txt:hover{
+    box-shadow: 2px 2px 5px 0px black;
+    transition: 0.3s;
+}
+
+#btnpay{
+    margin-left: 186px;
+    margin-top: 20px;
+    width: 100px;
+    height: auto;
+}

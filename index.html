@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M E W A N</title>
+    <link rel="icon" href="img/icon.png" type="img/png">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/anime.min.js"></script>
+    <script src="js/TweenMan.js"></script>
+    <link rel="stylesheet" href="img/font-awsome/css/all.css">
+    <link rel="stylesheet" href="mediaquary/HomeMedia.css">
+
+
+</head>
+
+<body id="body" style="background-color: #000000;overflow: hidden">
+<style>
+    @media all and (min-width: 375px) and (max-width: 420px) {
+        .wrap {
+            overflow: hidden;
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 25px;
+            letter-spacing: 10px;
+            transition: 0.9s;
+            margin-top: 300px;
+            text-align: center;
+        }
+        #btn {
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 2px;
+            position: absolute;
+            margin: 5% auto;
+            top: 17px;
+            font-size: 25px;
+            bottom: 0;
+            left: -50px;
+            right: 0;
+            width: 194px;
+            height: 49px;
+            border: solid 0px white;
+            background-image: linear-gradient(#191919, #131313, #080808);
+            z-index: 20;
+            opacity: 0;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+    }
+
+</style>
+
+<div class="song">
+
+    <div class="pause" onclick="togglePlay()"><i class="fab fa-creative-commons-sampling" style="color: white"></i></div>
+    <div class="player">
+        <audio class="audio" src="sound/BackgroundSound.mp3" autoplay type="audio" loop=""></audio>
+    </div>
+
+</div>
+
+<!--<div id="loader">-->
+<!--<img src="img/guanxian.gif" id="loaderimg" alt="">-->
+<!--</div>-->
+<div id="maindiv">
+<div class="wrap" id="middlediv" >
+    <span>M</span>
+    <span>E</span>
+    <span>W</span>
+    <span>A</span>
+    <span style="margin-right: 60px">N</span>
+    <span>A</span>
+    <span>Y</span>
+    <span>O</span>
+    <span>M</span>
+    <span>A</span>
+    <span>L</span>
+    <button id="btn">ENTER</button>
+</div>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    const backSound = new Audio("sound/BackSound.mp3");
+    var pause = document.querySelector(".pause");
+    var audio = document.querySelector(".audio");
+
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            pause.innerHTML = "<i class=\"fas fa-volume-up\" style='color: white'></i>";
+        } else {
+            audio.pause();
+            pause.innerHTML = "<i class=\"fas fa-volume-mute\"></i>";
+            pause.style.color = " #848484";
+        }
+    }
+
+    //========loader============//
+    // $(document).ready(function () {
+    //
+    // });
+    // $(window).on('load',function () {
+    //     console.log("readying window")
+    //     $('#loader').fadeOut(1000);
+    // })
+
+    //================================//
+
+    $('#btn').click(function () {
+        backSound.play();
+        $('.wrap span').css('opacity', ' 0');
+        $('#btn').css('opacity', '0');
+        location.href = "About.html";
+
+    });
+
+    TweenMax.to(".wrap span", 0.5, {
+        delay: 0.5,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+
+    TweenMax.to("#btn", 2, {
+        delay: 1.5,
+        opacity: 1,
+        y: 20,
+        ease: Expo.easeInOut
+    });
+
+    // anime.timeline({loop: false})
+    //     .add({
+    //         targets: '.ml7 .letter',
+    //         translateY: ["1.1em", 0],
+    //         translateX: ["0.55em", 0],
+    //         translateZ: 0,
+    //         rotateZ: [180, 0],
+    //         duration: 750,
+    //         easing: "easeOutExpo",
+    //         delay: function (el, i) {
+    //             return 9000 + 50 * i;
+    //         }
+    //     });
+
+
+</script>
+
+
+</body>
+
+
+</html>

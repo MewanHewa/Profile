@@ -1,0 +1,216 @@
+
+@media all and (min-width: 500px) and (max-width: 600px) {
+    #ulset {
+        display: flex;
+        list-style: none;
+        font-family: 'Julius Sans One', sans-serif;
+        color: rgba(238, 238, 238, 0.85);
+        letter-spacing: 0px;
+        font-size: 12px;
+        /*overflow: hidden;*/
+        position: absolute;
+        width: 706px;
+        margin: auto;
+        left: 0;
+        right: 0;
+
+    }
+    #ulset li{
+        margin-right: 12px;
+        transition: 0.2s;
+
+    }
+    #list {
+        margin: auto;
+        position: absolute;
+        bottom: 14px;
+        height: 37px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .letterdiv {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 90px;
+        /* border-radius: 10%; */
+        bottom: 0;
+        width: 461px;
+        height: 336px;
+        background-color: rgba(0, 122, 255, 0);
+        transition: 2s;
+    }
+    .cards {
+        width: 133px;
+        border-radius: 12px;
+        height: 100px;
+        transition: 0.3s;
+        margin: 0px;
+        /* background-color: rgba(255, 255, 255, 0.17); */
+        background-image: linear-gradient(#252525, #191919, #0e0e0e);
+        font-family: 'Julius Sans One', sans-serif;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+}
+
+
+
+@media all and (min-width: 600px) and (max-width: 700px) {
+    #ulset {
+        display: flex;
+        list-style: none;
+        font-family: 'Julius Sans One', sans-serif;
+        color: rgba(238, 238, 238, 0.85);
+        letter-spacing: 0px;
+        font-size: 12px;
+        /*overflow: hidden;*/
+        position: absolute;
+        width: 706px;
+        margin: auto;
+        left: 0;
+        right: 0;
+
+    }
+    #ulset li{
+        margin-right: 12px;
+        transition: 0.2s;
+
+    }
+    #list {
+        margin: auto;
+        position: absolute;
+        bottom: 14px;
+        height: 37px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+@media all and (min-width: 700px) and (max-width: 800px) {
+    #ulset {
+        display: flex;
+        list-style: none;
+        font-family: 'Julius Sans One', sans-serif;
+        color: rgba(238, 238, 238, 0.85);
+        letter-spacing: 0px;
+        font-size: 12px;
+        /*overflow: hidden;*/
+        position: absolute;
+        width: 706px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    #ulset li{
+        margin-right: 30px;
+        transition: 0.2s;
+
+    }
+
+}
+@media all and (min-width: 800px) and (max-width: 992px) {
+    #list {
+        margin: auto;
+        position: absolute;
+        bottom: 14px;
+        height: 37px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #ulset {
+        display: flex;
+        list-style: none;
+        font-family: 'Julius Sans One', sans-serif;
+        color: rgba(238, 238, 238, 0.85);
+        letter-spacing: 3px;
+        font-size: 12px;
+        overflow: hidden;
+        position: absolute;
+        width: 970px;
+        margin: auto;
+        left: 100px;
+        right: 0;
+    }
+    #ulset li{
+        margin-right: 50px;
+        transition: 0.2s;
+
+    }
+
+}
+
+@media all and (min-height: 500px) and (max-height: 600px) {
+    #list {
+        margin: auto;
+        position: absolute;
+        bottom: 14px;
+        height: 37px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+}
+@media all and (min-height: 500px) and (max-height: 600px) {
+    #list {
+        margin: auto;
+        position: absolute;
+        bottom: 14px;
+        height: 37px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+}
+@media all and (min-height: 300px) and (max-height: 500px) {
+    #list {
+        margin: auto;
+        position: absolute;
+        bottom: 14px;
+        height: 37px;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .ringOne img {
+        width: 390px;
+        height: auto;
+        animation: rotateFirstRing 2s linear infinite;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 100px;
+    }
+
+    .ringTwo img {
+
+        width: 390px;
+        height: auto;
+        animation: rotateFirstRing 8s linear infinite;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 100px;
+    }
+
+    #para {
+        font-family: 'Julius Sans One', sans-serif;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.85);
+        top: 85px;
+        margin: auto;
+        overflow: auto;
+        /* height: 390px; */
+        font-size: 11px;
+        width: 270px;
+    }
+
+}

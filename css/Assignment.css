@@ -1,0 +1,235 @@
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.02);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(247, 255, 252, 0.17);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(253, 239, 248, 0.11);
+}
+@keyframes rotateFirstRing {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ringOne img {
+    width: 500px;
+    height: auto;
+    animation: rotateFirstRing 2s linear infinite;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100px;
+}
+
+.ringTwo img {
+
+    width: 500px;
+    height: auto;
+    animation: rotateFirstRing 8s linear infinite;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100px;
+}
+
+
+.mid{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#circle{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    height: auto;
+}
+
+#circle1{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    height: auto;
+}
+
+.letterdiv {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 90px;
+     /*border-radius: 10%;*/
+    bottom: 0;
+    width: 650px;
+    height: 336px;
+    background-color: rgba(0, 122, 255, 0);
+    transition: 2s;
+}
+.pause {
+    margin-left: 0.5em;
+    cursor: pointer;
+
+}
+
+#list{
+    margin: auto;
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+}
+#ulset{
+    display: flex;
+    list-style: none;
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgba(238, 238, 238, 0.85);
+    letter-spacing: 3px;
+    font-size: 12px;
+    overflow: hidden;
+    position: absolute;
+    width: 970px;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+#ulset li{
+    margin-right: 90px;
+    transition: 0.2s;
+
+}
+
+
+#ulset li:hover{
+    font-family: 'Julius Sans One', sans-serif ;
+    border-bottom: white;
+    cursor:pointer;
+    color: #f77d73;
+
+}
+
+
+.headline{
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 55px;
+}
+
+.discription{
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+
+}
+.para{
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.85);
+    top: 85px;
+    margin: auto;
+    margin-top: 35px;
+    overflow: auto;
+    transition: 0.9s;
+    transition-delay: 2s;
+
+}
+
+#assingdiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 75%;
+    margin-left: 11px;
+    width: 100%;
+    position: relative;
+}
+
+.cards{
+    width: 133px;
+    border-radius: 12px;
+    height: 100px;
+    transition: 0.3s;
+    margin: 27px;
+    /* background-color: rgba(255, 255, 255, 0.17); */
+    background-image: linear-gradient(#252525, #191919, #0e0e0e);
+    font-family: 'Julius Sans One', sans-serif;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cards:hover{
+    width: 133px;
+    border-radius: 12px;
+    height: 100px;
+    background-image: linear-gradient(#ffffff, #eeeeee, #dcdcdc);
+    box-shadow: 0 0 10px #f3eef7, 0 0 25px #f7edf7, 0 0 44px #f7f6ff;
+
+
+}
+
+.cards:hover>.cardtxt{
+-webkit-text-fill-color: black;
+
+}
+#assingdiv1{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+height: 75%;
+margin-left: 11px;
+width: 100%;
+position: relative;
+}
+
+#cirleheaderdiv{
+position: absolute;
+margin: auto;
+left: 0;
+right: 0;
+top: 0;
+border-radius: 100%;
+bottom: 108px;
+width: 300px;
+height: 300px;
+background-color: rgba(255, 248, 42, 0);
+transition: 2s;
+}
+.pause {
+margin-left: 0.5em;
+cursor:pointer;
+}

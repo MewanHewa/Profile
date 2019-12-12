@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/Skills.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="img/font-awsome/css/all.css">
+    <script src="js/anime.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/TweenMan.js"></script>
+
+</head>
+<body>
+<style>
+    .para{
+
+    }
+</style>
+
+
+<div class="mid">
+    <div id="circle" style="opacity: 1">
+        <div class="ringOne ring">
+            <img src="img/ring.png" alt="">
+        </div>
+        <div class="ringTwo ring">
+            <img src="img/ring.png" alt="">
+        </div>
+    </div>
+
+    <div id="list">
+        <ul id="ulset" style="opacity: 1">
+            <li id="home">HOME</li>
+            <li id="about">ABOUT</li>
+            <li id="skl">SKILLS</li>
+            <li id="assingment">ASASSINGMENTS</li>
+            <li id="prj">PROJECTS</li>
+            <li style="color: #fff82a">CONTACT</li>
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="letterdiv" id="skillsdiv" style="transition: 1s">
+    <h1 align="center" id="headline" class="headline" style="transition: 1s; opacity: 0;">THANKS!</h1>
+    <h4 align="center" id="discrip" class="discription" style="transition: 1s; opacity: 0;">FOR THE VISITING</h4>
+    <p align="center" id="para" class="para" style="transition: 1s; opacity: 0; font-size: 12px">
+        mewanayomall@gmail.com <br /><br /> +94717487808 <br /><br />
+        <i class="fab fa-facebook-square"style="font-size: 25px"></i>
+        <i class="fab fa-github-square"style="font-size: 25px"></i>
+        <i class="fab fa-google-plus-square" style="font-size: 25px"></i>
+        <i class="fab fa-twitter-square" style="font-size: 25px"></i>
+    </p>
+
+    <i class="fab fa-java" id="java" style="opacity: 0"></i>
+    <i class="fab fa-js-square" id="js" style="opacity: 0"></i>
+    <i class="fab fa-html5" id="html" style="opacity: 0"></i>
+    <i class="fab fa-css3-alt" id="css" style="opacity: 0"></i>
+
+</div>
+<script>
+    TweenMax.to(".para", 0.1, {
+        delay: 0.9,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".discription", 0.1, {
+        delay: 0.5,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".headline", 0.1, {
+        delay: 0.2,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+
+    $('#about').click(function () {
+        location.href = "About.html";
+        backSound.play();
+
+    });
+    $('#home').click(function () {
+        location.href = "index.html";
+        backSound.play();
+
+    });
+    $('#assingment').click(function () {
+        location.href = "Assignment.html";
+
+    });
+    $('#prj').click(function () {
+        location.href = "Projects.html";
+
+    });
+
+    $('#skl').click(function () {
+        location.href = "Skills.html";
+
+    });
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M E W A N</title>
+    <link rel="icon" href="img/icon.png" type="img/png">
+    <link rel="stylesheet" href="css/Skills.css">
+    <script src="js/anime.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/TweenMan.js"></script>
+    <link rel="stylesheet" href="img/font-awsome/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="mediaquary/AbouteMedia.css">
+</head>
+<body style="background-color: black">
+
+<div class="song" style="z-index: 20;position: absolute;">
+
+    <div class="pause" onclick="togglePlay()"><i class="fas fa-volume-up" style='color: white'></i></div>
+    <div class="player">
+        <audio class="audio" src="sound/BackgroundSound.mp3" autoplay type="audio" loop=""></audio>
+    </div>
+</div>
+
+<div class="mid,container-fluid">
+    <div id="circle" style="opacity: 1">
+        <div class="ringOne ring">
+            <img src="img/ring.png" alt="">
+        </div>
+        <div class="ringTwo ring">
+            <img src="img/ring.png" alt="">
+        </div>
+    </div>
+
+    <div id="list">
+        <ul id="ulset" style="opacity: 0">
+            <li id="home">HOME</li>
+            <li id="about">ABOUT</li>
+            <li style="color: #fff82a">SKILLS</li>
+            <li id="assingment">ASASSINGMENTS</li>
+            <li id="prj">PROJECTS</li>
+            <li id="cotac">CONTACT</li>
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="letterdiv" id="skillsdiv" style="transition: 1s">
+    <h1 align="center" id="headline" class="headline" style="transition: 1s; opacity: 0;">SKILLS</h1>
+    <h4 align="center" id="discrip" class="discription" style="transition: 1s; opacity: 1;"></h4>
+    <p align="center" id="para" class="para" style="transition: 1s; opacity: 0; font-size: 12px">
+       I have used some of my programming skills to create this website.
+        And i have already learnd those programming languages beyond the website what i have created.
+        All of my project and assingments are created by using those languages</p>
+
+    <i class="fab fa-java" id="java" style="opacity: 0"></i>
+    <i class="fab fa-js-square" id="js" style="opacity: 0"></i>
+    <i class="fab fa-html5" id="html" style="opacity: 0"></i>
+    <i class="fab fa-css3-alt" id="css" style="opacity: 0"></i>
+
+</div>
+
+<div class="letterdiv" id="javadiv" style="display: none">
+    <h1 align="center" id="headline2" class="headline" style="transition: 1s; opacity: 1;">
+        <i class="fab fa-java" style="font-size: 75px;"></i>
+    </h1>
+    <h4 align="center" id="discrip2" class="discription" style="transition: 1s; opacity: 1;">JAVA</h4>
+    <p align="center" id="para2" class="para" style="transition: 1s; opacity: 0; font-size: 12px">
+        Java was my first programming language that i have learnd. and i have already done standalone projects by using java
+    </p>
+
+    <i class="far fa-arrow-alt-circle-left" id="b1"
+       style=" font-size: 27px;
+        color: #ffffff;
+        transition: 0.5s;
+        margin-top: 50px;
+        margin-left: 45%;
+        cursor: pointer;
+        border-radius: 10%;">
+
+    </i>
+
+
+</div>
+
+<div class="letterdiv" id="jsdiv" style="display: none">
+    <h1 align="center" id="headline3" class="headline" style="transition: 1s; opacity: 1;">
+        <i class="fab fa-js-square" style="font-size: 75px;"></i>
+    </h1>
+    <h4 align="center" id="discrip3" class="discription" style="transition: 1s; opacity: 1;">JAVA SCRIPT</h4>
+    <p align="center" id="para3" class="para" style="transition: 1s; opacity: 1; font-size: 12px">
+        I have done some of my projects and assingments by using java script and im very interested about this language.
+    </p>
+    <i class="far fa-arrow-alt-circle-left" id="b2"
+       style=" font-size: 27px;
+        color: #ffffff;
+        transition: 0.5s;
+        margin-top: 50px;
+        margin-left: 45%;
+        cursor: pointer;
+        border-radius: 10%;">
+
+    </i>
+
+</div>
+
+<div class="letterdiv" id="htmldiv" style="display: none">
+    <h1 align="center" id="headline4" class="headline" style="transition: 1s; opacity: 1;">
+        <i class="fab fa-html5" style="font-size: 75px;"></i>
+    </h1>
+    <h4 align="center" id="discrip4" class="discription" style="transition: 1s; opacity: 1;">HTML</h4>
+    <p align="center" id="para4" class="para" style="transition: 1s; opacity: 1; font-size: 12px">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab cupiditate, dignissimos enim excepturi harum impedit inventore ipsa
+        , non sed tempora velit voluptas. Cum distinctio impedit
+        laboriosam maiores necessitatibus similique, totam!</p>
+
+    <i class="far fa-arrow-alt-circle-left" id="b3"
+       style=" font-size: 27px;
+        color: #ffffff;
+        transition: 0.5s;
+        margin-top: 50px;
+        margin-left: 45%;
+        cursor: pointer;
+        border-radius: 10%;">
+
+    </i>
+
+</div>
+
+<div class="letterdiv" id="cssdiv" style="display: none">
+    <h1 align="center" id="headline5" class="headline" style="transition: 1s; opacity: 1;">
+        <i class="fab fa-css3-alt" style="font-size: 75px;"></i>
+    </h1>
+    <h4 align="center" id="discrip5" class="discription" style="transition: 1s; opacity: 1;">CSS</h4>
+    <p align="center" id="para5" class="para" style="transition: 1s; opacity: 1; font-size: 12px">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab cupiditate, dignissimos enim excepturi harum impedit inventore ipsa
+        , non sed tempora velit voluptas. Cum distinctio impedit
+        laboriosam maiores necessitatibus similique, totam!</p>
+
+    <i class="far fa-arrow-alt-circle-left" id="b4"
+       style=" font-size: 27px;
+        color: #ffffff;
+        transition: 0.5s;
+        margin-top: 50px;
+        margin-left: 45%;
+        cursor: pointer;
+        border-radius: 10%;">
+
+    </i>
+
+</div>
+
+
+<!--<div id="skildiv">-->
+<!--<div class=" skillring1">-->
+
+<!--<img src="img/circle.png" alt="" class="skillrings">-->
+<!--<i class="fab fa-html5" style="background-color: white"></i>-->
+<!--</div>-->
+<!--<div class="skillring2">-->
+<!--<img src="img/ring.png" alt=""class="skillrings">-->
+<!--</div>-->
+<!--<div class="skillring3">-->
+<!--<img src="img/ring.png" alt=""class="skillrings">-->
+<!--</div>-->
+<!--<div class="skillring4">-->
+<!--<img src="img/ring.png" alt=""class="skillrings">-->
+<!--</div>-->
+<!--<div class="skillring5">-->
+<!--<img src="img/ring.png" alt=""class="skillrings">-->
+<!--</div>-->
+
+<!--</div>-->
+
+
+<script>
+
+    var pause = document.querySelector(".pause");
+    var audio = document.querySelector(".audio");
+
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            pause.innerHTML = "<i class=\"fas fa-volume-up\" style='color: white'></i>";
+        } else {
+            audio.pause();
+            pause.innerHTML = "<i class=\"fas fa-volume-mute\"></i>";
+            pause.style.color = " #848484";
+        }
+    }
+
+    $('#about').click(function () {
+        location.href = "About.html";
+        backSound.play();
+
+    });
+    $('#home').click(function () {
+        location.href = "index.html";
+        backSound.play();
+
+    });
+    $('#assingment').click(function () {
+        location.href = "Assignment.html";
+
+    });
+    $('#prj').click(function () {
+        location.href = "Projects.html";
+
+    });
+
+    $('#cnt').click(function () {
+        location.href = "Contact.html";
+
+    });
+
+    const rollSound = new Audio("sound/clicksound.mp3");
+    const backSound = new Audio("sound/BackSound.mp3");
+    $('#java').click(function () {
+        backSound.play();
+        $('#skillsdiv').css({
+            'transform': 'translateX(200px)',
+            'visibility': 'hidden',
+            'opacity': '0',
+            'transition': 'visibility 0s 0.6s opacity 0.7s linear'
+        });
+
+
+        $('#jsdiv').css('display', 'none');
+        $('#htmldiv').css('display', 'none');
+        $('#cssdiv').css('display', 'none');
+        $('#javadiv').css('display', 'unset');
+    });
+    $('#js').click(function () {
+        backSound.play();
+        $('#skillsdiv').css({
+            'transform': 'translateX(200px)',
+            'visibility': 'hidden',
+            'opacity': '0',
+            'transition': 'visibility 0s 0.6s opacity 0.7s linear'
+        });
+
+
+        $('#jsdiv').css('display', 'unset');
+        $('#htmldiv').css('display', 'none');
+        $('#cssdiv').css('display', 'none');
+        $('#javadiv').css('display', 'none');
+    });
+    $('#html').click(function () {
+        backSound.play();
+        $('#skillsdiv').css({
+            'transform': 'translateX(200px)',
+            'visibility': 'hidden',
+            'opacity': '0',
+            'transition': 'visibility 0s 0.6s opacity 0.7s linear'
+        });
+        $('#jsdiv').css('display', 'none');
+        $('#htmldiv').css('display', 'unset');
+        $('#cssdiv').css('display', 'none');
+        $('#javadiv').css('display', 'none');
+    });
+    $('#css').click(function () {
+        backSound.play();
+        $('#skillsdiv').css({
+            'transform': 'translateX(200px)',
+            'visibility': 'hidden',
+            'opacity': '0',
+            'transition': 'visibility 0s 0.6s opacity 0.7s linear'
+        });
+        $('#jsdiv').css('display', 'none');
+        $('#htmldiv').css('display', 'none');
+        $('#cssdiv').css('display', 'unset');
+        $('#javadiv').css('display', 'none');
+    });
+
+    $('#b1').click(function () {
+        backSound.play();
+        location.reload(this);
+
+    });
+
+    $('#b2').click(function () {
+        backSound.play();
+        location.reload(this);
+
+    });
+
+    $('#b3').click(function () {
+        backSound.play();
+        location.reload(this);
+
+    });
+
+    $('#b4').click(function () {
+        backSound.play();
+        location.reload(this);
+    });
+
+    TweenMax.to(".para", 0.1, {
+        delay: 0.5,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".headline", 0.1, {
+        delay: 0.2,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to("#java", 0.1, {
+        delay: 0.8,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to("#js", 0.1, {
+        delay: 1,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to("#html", 0.1, {
+        delay: 1.2,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to("#css", 0.1, {
+        delay: 1.4,
+        opacity: 1,
+        y: 5,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to("#ulset", 1, {
+        delay: 1.2,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+
+</script>
+
+</body>
+</html>

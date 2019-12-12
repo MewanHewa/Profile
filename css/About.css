@@ -1,0 +1,170 @@
+
+body{
+    background-color: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.02);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(247, 255, 252, 0.17);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(253, 239, 248, 0.11);
+}
+@keyframes rotateFirstRing {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateFirstRing {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ringOne img {
+    width: 500px;
+    height: auto;
+    animation: rotateFirstRing 2s linear infinite;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100px;
+}
+
+.ringTwo img {
+
+    width: 500px;
+    height: auto;
+    animation: rotateFirstRing 8s linear infinite;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100px;
+}
+
+
+.mid{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#circle{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    height: auto;
+}
+#list{
+    margin: auto;
+    position: absolute;
+    bottom: 30px;
+    height: 37px;
+    width: 100%;
+
+}
+#ulset{
+    display: flex;
+    list-style: none;
+    font-family: 'Julius Sans One', sans-serif;
+    color: rgba(238, 238, 238, 0.85);
+    letter-spacing: 3px;
+    font-size: 12px;
+    overflow: hidden;
+    position: absolute;
+    width: 970px;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+#ulset li{
+    margin-right: 90px;
+    transition: 0.2s;
+
+}
+
+
+#ulset li:hover{
+    font-family: 'Julius Sans One', sans-serif ;
+    border-bottom: white;
+    cursor:pointer;
+    color: #f77d73;
+
+
+
+}
+
+
+#hi{
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+#name{
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+#para{
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.85);
+    top: 85px;
+    margin: auto;
+    overflow: auto;
+    font-size: 12px;
+    /*height: 390px;*/
+    width: 270px;
+}
+
+#letterdiv{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 400px;
+
+}
+.pause {
+    margin-left: 0.5em;
+    cursor:pointer;
+}

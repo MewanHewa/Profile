@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M E W A N</title>
+    <link rel="icon" href="img/icon.png" type="img/png">
+    <link rel="stylesheet" href="css/Projects.css">
+    <script src="js/anime.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/TweenMan.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="img/font-awsome/css/all.css">
+    <link rel="stylesheet" href="mediaquary/ProjectMedia.css">
+</head>
+<body>
+<div class="song" style="z-index: 20;position: absolute;">
+
+    <div class="pause" onclick="togglePlay()"><i class="fas fa-volume-up" style='color: white'></i></div>
+    <div class="player">
+        <audio class="audio" src="sound/BackgroundSound.mp3" autoplay type="audio" loop=""></audio>
+    </div>
+</div>
+
+<div class="mid">
+    <div id="circle" style="opacity: 1">
+        <div class="ringOne" style="transition: 2s; opacity:1">
+            <img src="img/ring.png" alt="">
+        </div>
+        <div class="ringTwo">
+            <img src="img/ring.png" alt="">
+        </div>
+
+        <div id="cirleheaderdiv">
+            <h1 align="center" id="csshead"style="color: #bdbdbd;opacity: 0;transition: 0.7s;margin-top:33px;margin-bottom: -22px;">
+                <i class="fab fa-connectdevelop"style="font-size: 193px;"></i>
+            </h1>
+        </div>
+    </div>
+
+
+    <!--<div id="circle1" style="opacity: 1">-->
+    <!--<div class="ringOne" style="transition: 2s; opacity:1">-->
+    <!--<img src="img/ring.png"  alt="">-->
+    <!--</div>-->
+    <!--<div class="ringTwo">-->
+    <!--<img src="img/ring.png" alt="">-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div id="list">
+        <ul id="ulset" style="opacity: 0">
+            <li id="hm">HOME</li>
+            <li id="abt">ABOUT</li>
+            <li id="skl">SKILLS</li>
+            <li id="asg">ASASSINGMENTS</li>
+            <li style="color: #fff82a">PROJECTS</li>
+            <li id="cnt">CONTACT</li>
+        </ul>
+    </div>
+</div>
+
+<div class="letterdiv" id="skillsdiv" style="transition: 1s;overflow-y: scroll;overflow-x: hidden;">
+    <h1 align="center" id="headline" class="headline" style="transition: 1s; opacity: 0;">PROJECTS</h1>
+    <h4 align="center" id="discrip" class="discription" style="transition: 1s; opacity: 0;"></h4>
+    <!--<p align="center" id="para" class="para" style="transition: 1s; opacity: 1; font-size: 12px">-->
+    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+    <!--Ab cupiditate, dignissimos enim excepturi harum impedit inventore ipsa-->
+    <!--, non sed tempora velit voluptas. Cum distinctio impedit-->
+    <!--laboriosam maiores necessitatibus similique, totam!</p>-->
+
+    <div id="assingdiv">
+        <div class="cards" id="p1">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">POS</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards" id="p2">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">POS-BOOSTRAP</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards" id="p3">
+            <h3 align="center" class="cardtxt" style="color: white;font-size: 13px">JS-GAME</h3>
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-chevron-circle-right"></i></h1>
+        </div>
+        <div class="cards">
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-question-circle"></i></h1>
+        </div>
+        <div class="cards">
+            <h1 align="center" class="cardtxt" style="color: white;font-size: 25px"><i
+                    class="fas fa-question-circle"></i></h1>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    var pause = document.querySelector(".pause");
+    var audio = document.querySelector(".audio");
+
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            pause.innerHTML = "<i class=\"fas fa-volume-up\" style='color: white'></i>";
+        } else {
+            audio.pause();
+            pause.innerHTML = "<i class=\"fas fa-volume-mute\"></i>";
+            pause.style.color = " #848484";
+        }
+    }
+
+    TweenMax.to("#ulset", 1, {
+        delay: 1.2,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to("#circle", 1, {
+        delay: 0.5,
+        opacity: 1,
+        scaleX: 10 / 30,
+        scaleY: 10 / 30,
+        y: -200,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.to(".headline", 1, {
+        delay: 0.9,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to(".discription", 1, {
+        delay: 1.1,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+    TweenMax.to(".cards", 1, {
+        delay: 1.5,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+    $('#assingdiv').mouseenter(function () {
+        $('#jshead').css('opacity', '0');
+        $('#csshead').css('opacity', '1');
+    });
+    $('#assingdiv1').mouseenter(function () {
+        $('#csshead').css('opacity', '0');
+        $('#jshead').css('opacity', '1');
+    });
+
+    $('#p1').click(function () {
+        location.href = "projects/project1/index.html";
+
+
+    });
+    $('#p2').click(function () {
+        location.href = "projects/project2/customer.html";
+
+
+    });
+    $('#p3').click(function () {
+        location.href = "projects/JSGAME/index.html";
+
+
+    });
+
+
+    $('#hm').click(function () {
+        location.href = "index.html";
+
+    });
+
+    $('#cnt').click(function () {
+        location.href = "Contact.html";
+
+    });
+
+    $('#skl').click(function() {
+        var time = 3
+        setInterval( function() {
+            time--;
+
+            $('.headline').css('opacity','0');
+            $('.discription').css('opacity','0');
+            $('.card').css('opacity','0');
+            $('#ulset').css('opacity','0');
+            $('#assingdiv').css('opacity','0');
+
+            TweenMax.to("#circle", 1, {
+                delay: 0.5,
+                opacity: 1,
+                scaleX: 1 ,
+                scaleY: 1,
+                y: 20,
+                ease: Expo.easeInOut
+            });
+
+            $('#time').html(time);
+            if (time === 0) {
+                location.href = "Skills.html";
+            }
+        }, 1000 );
+
+    });
+
+    $('#abt').click(function() {
+        var time = 3
+        setInterval( function() {
+            time--;
+
+            $('.headline').css('opacity','0');
+            $('.discription').css('opacity','0');
+            $('.card').css('opacity','0');
+            $('#ulset').css('opacity','0');
+            $('#assingdiv').css('opacity','0');
+            $('#circle').css('opacity','0');
+            TweenMax.to("#circle", 1, {
+                delay: 0.5,
+                opacity: 1,
+                scaleX: 1 ,
+                scaleY: 1,
+                y: 20,
+                ease: Expo.easeInOut
+            });
+
+            $('#time').html(time);
+            if (time === 0) {
+                location.href = "About.html";
+            }
+        }, 1000 );
+
+    });
+
+    $('#asg').click(function() {
+        var time = 3
+        setInterval( function() {
+            time--;
+
+            $('.headline').css('opacity','0');
+            $('.discription').css('opacity','0');
+            $('.card').css('opacity','0');
+            $('#ulset').css('opacity','0');
+            $('#assingdiv').css('opacity','0');
+
+            TweenMax.to("#circle", 1, {
+                delay: 0.5,
+                opacity: 1,
+                scaleX: 1 ,
+                scaleY: 1,
+                y: 20,
+                ease: Expo.easeInOut
+            });
+
+            $('#time').html(time);
+            if (time === 0) {
+                location.href = "Assignment.html";
+            }
+        }, 1000 );
+
+    });
+
+
+
+
+</script>
+
+
+</body>
+</html>
